@@ -4,6 +4,8 @@ const providers = [
     name: "María Rodríguez",
     category: "Limpieza",
     zone: "Zona 14",
+    image: "assets/limpieza.jpg",
+    imageAlt: "Prestadora de limpieza con suministros en un apartamento",
     price: "Limpieza general desde Q150",
     rating: "4.9 ★",
     reviews: "18 reseñas",
@@ -14,6 +16,8 @@ const providers = [
     name: "Ana García",
     category: "Niñera",
     zone: "Zona 10",
+    image: "assets/ninera.jpg",
+    imageAlt: "Niñera profesional en una sala con materiales infantiles",
     price: "Cuidado por tarde desde Q180",
     rating: "4.8 ★",
     reviews: "11 reseñas",
@@ -24,6 +28,8 @@ const providers = [
     name: "Carlos López",
     category: "Plomería",
     zone: "Zona 14",
+    image: "assets/plomeria.jpg",
+    imageAlt: "Plomero profesional con herramienta junto a un lavamanos",
     price: "Revisión de fuga desde Q125",
     rating: "4.7 ★",
     reviews: "9 reseñas",
@@ -34,6 +40,8 @@ const providers = [
     name: "José Pérez",
     category: "Electricidad",
     zone: "Zona 10",
+    image: "assets/electricidad.jpg",
+    imageAlt: "Electricista profesional revisando un tomacorriente",
     price: "Instalación básica desde Q175",
     rating: "5.0 ★",
     reviews: "7 reseñas",
@@ -55,7 +63,7 @@ function renderProviders(category = "all") {
       (provider) => `
         <article class="provider-card">
           <div class="provider-photo">
-            <strong>${provider.initials}</strong>
+            <img src="${provider.image}" alt="${provider.imageAlt}" loading="lazy" />
           </div>
           <div class="provider-body">
             <h3>${provider.name}</h3>
@@ -67,7 +75,7 @@ function renderProviders(category = "all") {
             <p class="rating">${provider.rating} · ${provider.reviews}</p>
             <p>${provider.tasks.join(" · ")}</p>
             <p class="price">${provider.price}</p>
-            <a class="whatsapp-link" href="https://wa.me/50255555555?text=Hola%2C%20vi%20tu%20perfil%20en%20Zona%20Verificada%20y%20quiero%20consultar%20un%20servicio." target="_blank" rel="noreferrer">
+            <a class="whatsapp-link" href="https://wa.me/50255555555?text=Hola%2C%20vi%20tu%20perfil%20en%20Taski%20y%20quiero%20consultar%20un%20servicio." target="_blank" rel="noreferrer">
               Contactar por WhatsApp
             </a>
           </div>
