@@ -29,11 +29,11 @@
       <section class="hero" id="inicio">
         <div class="hero-content">
           <p class="eyebrow">Servicios verificados en Guatemala</p>
-          <p class="hero-kicker">No busques entre chats infinitos.</p>
-          <h1>Encontrá a la persona correcta para <span>resolver tu casa</span>.</h1>
+          <h1>Encontrá ayuda confiable para cualquier tarea en casa.</h1>
           <p class="hero-copy">
-            Taski reúne trabajadores verificados por zona, categoría, precio y reseñas.
-            Elegís, comparás y contactás por WhatsApp.
+            Taski conecta hogares con trabajadores verificados para limpieza, niñeras,
+            plomería, electricidad, carpintería, jardinería y más. Mirás precios, reseñas
+            y zona antes de contactar.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#directorio">Buscar trabajador</a>
@@ -46,13 +46,44 @@
           </div>
         </div>
 
-        <div class="hero-service-strip" aria-label="Servicios destacados">
-          <div class="strip-heading">
-            <span>Explorá servicios</span>
-            <a href="#directorio">Ver todo</a>
+        <aside class="search-card" aria-label="Buscador de servicios">
+          <div class="search-card-header">
+            <span>Buscar prestador</span>
+            <strong>Guatemala</strong>
           </div>
-          <div class="hero-rail" id="heroRail"></div>
-        </div>
+          <label for="hero-zone">Zona</label>
+          <select id="hero-zone">
+            <option>Zona 10</option>
+            <option>Zona 14</option>
+            <option>Zona 15</option>
+            <option>Zona 16</option>
+            <option>Carretera a El Salvador</option>
+            <option>Mixco</option>
+            <option>Villa Nueva</option>
+            <option>Antigua Guatemala</option>
+          </select>
+          <label for="hero-category">Categoría</label>
+          <select id="hero-category">
+            <option>Limpieza</option>
+            <option>Niñera</option>
+            <option>Plomería</option>
+            <option>Electricidad</option>
+            <option>Carpintería</option>
+            <option>Albañilería</option>
+            <option>Jardinería</option>
+            <option>Pintura</option>
+            <option>Cerrajería</option>
+          </select>
+          <div class="featured-provider">
+            <img class="mini-photo" src="limpieza.jpg" alt="" />
+            <div>
+              <strong>María Rodríguez</strong>
+              <p>Limpieza general desde Q150</p>
+              <span>4.9 · perfil verificado</span>
+            </div>
+          </div>
+          <button class="full-button" type="button">Contactar por WhatsApp</button>
+        </aside>
       </section>
 
       <section class="problem-section">
