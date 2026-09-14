@@ -164,3 +164,26 @@ filterButtons.forEach((button) => {
 
 renderProviders();
 renderHeroRail();
+
+const revealSections = document.querySelectorAll(".reveal-section");
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  },
+  { threshold: 0.25 }
+);
+
+revealSections.forEach((section) => revealObserver.observe(section));
+
+function updateScrollAnimation() {
+  const shift = `${Math.min(window.scrollY * 0.08, 70)}px`;
+  document.documentElement.style.setProperty("--scroll-shift", shift);
+}
+
+window.addEventListener("scroll", updateScrollAnimation, { passive: true });
+updateScrollAnimation();
