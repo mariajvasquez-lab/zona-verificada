@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" role="img" aria-labelledby="title">
+  <title id="title">Persona corriendo Taski</title>
+  <defs>
+    <linearGradient id="taski-runner" x1="80" y1="520" x2="720" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#77B9FF"/>
+      <stop offset="0.48" stop-color="#1F6BFF"/>
+      <stop offset="1" stop-color="#0746D8"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#taski-runner)" stroke-width="62" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 376c90 64 194 70 276-24 26-30 46-67 72-98"/>
+    <path d="M226 222c84-76 190-52 284 52 78 86 150 112 228 48"/>
+    <path d="M462 258l104 106 94 118"/>
+    <path d="M560 356l112-6"/>
+    <path d="M654 478l62-54"/>
+    <path d="M166 350l-78 70"/>
+  </g>
+  <circle cx="602" cy="170" r="39" fill="url(#taski-runner)"/>
+</svg>
