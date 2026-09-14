@@ -6,55 +6,61 @@
     <title>Taski | Servicios confiables en Guatemala</title>
     <meta
       name="description"
-      content="Directorio de prestadores verificados con precios fijos para hogares de zona 10 y zona 14 en Ciudad de Guatemala."
+      content="Taski conecta hogares en Guatemala con trabajadores verificados para limpieza, niñeras, plomería, electricidad, carpintería, jardinería y más."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Taski inicio">
-        <span class="brand-mark">T</span>
+        <img class="brand-mark" src="taski-logo.svg" alt="" />
         <span>Taski</span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#directorio">Directorio</a>
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#plan">Plan MVP</a>
-        <a href="#decisiones">Decisiones</a>
+        <a href="#zonas">Zonas</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#registro">Login / Signup</a>
       </nav>
-      <a class="header-cta" href="#directorio">Buscar servicio</a>
+      <a class="header-cta" href="#registro">Unirme</a>
     </header>
 
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <p class="eyebrow">MVP para Ciudad de Guatemala</p>
-          <h1>Contratá servicios para tu casa con identidad verificada y precio claro.</h1>
+          <p class="eyebrow">Servicios verificados en Guatemala</p>
+          <h1>Encontrá ayuda confiable para cualquier tarea en casa.</h1>
           <p class="hero-copy">
-            Taski conecta hogares de zonas 10 y 14 con prestadores de limpieza,
-            niñeras, plomería y electricidad que muestran su información antes de que los
-            contactés por WhatsApp.
+            Taski conecta hogares con trabajadores verificados para limpieza, niñeras,
+            plomería, electricidad, carpintería, jardinería y más. Mirás precios, reseñas
+            y zona antes de contactar.
           </p>
           <div class="hero-actions">
-            <a class="primary-button" href="#directorio">Ver directorio demo</a>
-            <a class="secondary-button" href="#plan">Ver plan de construcción</a>
+            <a class="primary-button" href="#directorio">Buscar trabajador</a>
+            <a class="secondary-button" href="#registro">Ofrecer servicios</a>
           </div>
           <div class="trust-row" aria-label="Puntos de confianza">
-            <span>DPI revisado manualmente</span>
-            <span>Precios fijos por tarea</span>
-            <span>Reseñas con código válido</span>
+            <span>Identidad revisada</span>
+            <span>Perfiles aprobados</span>
+            <span>Reseñas verificadas</span>
           </div>
         </div>
 
         <aside class="search-card" aria-label="Buscador de servicios">
           <div class="search-card-header">
             <span>Buscar prestador</span>
-            <strong>Zona 14</strong>
+            <strong>Guatemala</strong>
           </div>
           <label for="hero-zone">Zona</label>
           <select id="hero-zone">
-            <option>Zona 14</option>
             <option>Zona 10</option>
+            <option>Zona 14</option>
+            <option>Zona 15</option>
+            <option>Zona 16</option>
+            <option>Carretera a El Salvador</option>
+            <option>Mixco</option>
+            <option>Villa Nueva</option>
+            <option>Antigua Guatemala</option>
           </select>
           <label for="hero-category">Categoría</label>
           <select id="hero-category">
@@ -62,13 +68,18 @@
             <option>Niñera</option>
             <option>Plomería</option>
             <option>Electricidad</option>
+            <option>Carpintería</option>
+            <option>Albañilería</option>
+            <option>Jardinería</option>
+            <option>Pintura</option>
+            <option>Cerrajería</option>
           </select>
           <div class="featured-provider">
-            <div class="avatar">MR</div>
+            <img class="mini-photo" src="limpieza.jpg" alt="" />
             <div>
               <strong>María Rodríguez</strong>
               <p>Limpieza general desde Q150</p>
-              <span>4.9 ★ · 18 reseñas</span>
+              <span>4.9 · perfil verificado</span>
             </div>
           </div>
           <button class="full-button" type="button">Contactar por WhatsApp</button>
@@ -77,35 +88,35 @@
 
       <section class="problem-section">
         <div>
-          <p class="eyebrow">El problema</p>
-          <h2>Hoy la contratación depende de confianza informal.</h2>
+          <p class="eyebrow">Por qué existe Taski</p>
+          <h2>Contratar por recomendaciones sueltas ya no alcanza.</h2>
         </div>
         <div class="problem-grid">
           <article>
             <span>01</span>
-            <h3>Sin verificación previa</h3>
-            <p>Muchas personas contratan por grupos de Facebook o WhatsApp sin saber quién llega a su casa.</p>
+            <h3>Identidad primero</h3>
+            <p>Antes de aparecer en el directorio, cada trabajador pasa por revisión de datos y documentos.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Precios poco claros</h3>
-            <p>El costo se negocia tarde, por mensaje, y cambia según disponibilidad o urgencia.</p>
+            <h3>Precio antes del chat</h3>
+            <p>El cliente puede ver rangos y tareas comunes antes de escribir por WhatsApp.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Reseñas difíciles de validar</h3>
-            <p>Las recomendaciones se pierden en chats y no siempre vienen de clientes reales.</p>
+            <h3>Reseñas con control</h3>
+            <p>Las opiniones se dejan con código de servicio para reducir reseñas falsas.</p>
           </article>
         </div>
       </section>
 
       <section class="directory-section" id="directorio">
         <div class="section-heading">
-          <p class="eyebrow">Directorio público</p>
-          <h2>Una búsqueda simple para hogares.</h2>
+          <p class="eyebrow">Directorio</p>
+          <h2>Elegí por categoría, zona y confianza.</h2>
           <p>
-            El usuario no necesita cuenta. Solo filtra por zona y categoría, revisa precios
-            y contacta por WhatsApp.
+            Estos perfiles son ejemplos visuales del marketplace. La versión real conectaría
+            cada tarjeta con datos aprobados y reseñas verificadas.
           </p>
         </div>
 
@@ -115,9 +126,89 @@
           <button class="filter-button" data-filter="Niñera">Niñera</button>
           <button class="filter-button" data-filter="Plomería">Plomería</button>
           <button class="filter-button" data-filter="Electricidad">Electricidad</button>
+          <button class="filter-button" data-filter="Carpintería">Carpintería</button>
+          <button class="filter-button" data-filter="Albañilería">Albañilería</button>
+          <button class="filter-button" data-filter="Jardinería">Jardinería</button>
+          <button class="filter-button" data-filter="Pintura">Pintura</button>
+          <button class="filter-button" data-filter="Cerrajería">Cerrajería</button>
         </div>
 
         <div class="provider-grid" id="providerGrid"></div>
+      </section>
+
+      <section class="zones-section" id="zonas">
+        <div class="section-heading">
+          <p class="eyebrow">Cobertura inicial</p>
+          <h2>Más zonas disponibles para buscar y ofrecer servicios.</h2>
+        </div>
+        <div class="zone-grid">
+          <span>Zona 10</span>
+          <span>Zona 14</span>
+          <span>Zona 15</span>
+          <span>Zona 16</span>
+          <span>Zona 11</span>
+          <span>Zona 7</span>
+          <span>Mixco</span>
+          <span>Villa Nueva</span>
+          <span>Carretera a El Salvador</span>
+          <span>Antigua Guatemala</span>
+        </div>
+      </section>
+
+      <section class="auth-section" id="registro">
+        <div class="section-heading">
+          <p class="eyebrow">Login / Signup</p>
+          <h2>Entrá según lo que necesitás hacer.</h2>
+        </div>
+        <div class="auth-grid">
+          <article class="auth-card auth-worker">
+            <span>Para trabajadores</span>
+            <h3>Ofrecé tus servicios</h3>
+            <p>Creá tu perfil, subí tus documentos, publicá precios y aparecé en el directorio cuando seas aprobado.</p>
+            <div class="auth-actions">
+              <a href="#registro">Signup trabajador</a>
+              <a href="#registro">Login trabajador</a>
+            </div>
+          </article>
+          <article class="auth-card auth-client">
+            <span>Para buscadores</span>
+            <h3>Contratá con más confianza</h3>
+            <p>Guardá favoritos, revisá perfiles, dejá reseñas verificadas y contactá trabajadores por WhatsApp.</p>
+            <div class="auth-actions">
+              <a href="#registro">Signup buscador</a>
+              <a href="#registro">Login buscador</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="security-section" id="seguridad">
+        <div class="section-heading">
+          <p class="eyebrow">Medidas de seguridad</p>
+          <h2>Cómo aprobamos personas en ambos lados.</h2>
+        </div>
+        <div class="security-steps">
+          <article>
+            <span>01</span>
+            <h3>Datos obligatorios</h3>
+            <p>Trabajadores y buscadores registran nombre, teléfono, zona y correo para reducir perfiles anónimos.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Revisión de identidad</h3>
+            <p>El trabajador sube DPI y foto de perfil. El equipo revisa manualmente antes de aprobarlo.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Perfil visible solo si está aprobado</h3>
+            <p>Un trabajador pendiente, rechazado o sin suscripción activa no aparece públicamente.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Reseñas con código</h3>
+            <p>El cliente necesita un código de servicio para dejar opinión, así se evita que cualquiera publique reseñas falsas.</p>
+          </article>
+        </div>
       </section>
 
       <section class="flows-section" id="como-funciona">
@@ -150,112 +241,6 @@
               <li>Generan códigos de reseña para clientes reales.</li>
             </ol>
           </article>
-        </div>
-      </section>
-
-      <section class="mvp-section">
-        <div class="mvp-copy">
-          <p class="eyebrow">Hipótesis del MVP</p>
-          <h2>La métrica importante no es el primer pago, es la renovación.</h2>
-          <p>
-            El MVP valida si un prestador paga una suscripción mensual por aparecer
-            verificado con precio fijo, y si los hogares prefieren esta opción frente a
-            buscar en Facebook. El dato clave es cuántos prestadores renuevan al segundo mes.
-          </p>
-        </div>
-        <div class="metric-card">
-          <span>Métrica principal</span>
-          <strong>Renovación del segundo mes</strong>
-          <p>Indica si el prestador percibió valor real después de aparecer en el directorio.</p>
-        </div>
-      </section>
-
-      <section class="plan-section" id="plan">
-        <div class="section-heading">
-          <p class="eyebrow">Plan de construcción</p>
-          <h2>Fases verticales, cada una desplegable en Vercel.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="phase-card">
-            <span>Fase 0</span>
-            <h3>Preparación</h3>
-            <p>Repositorio, Vercel, variables de entorno, README, CLAUDE.md y primer despliegue vacío.</p>
-          </article>
-          <article class="phase-card">
-            <span>Fase 1</span>
-            <h3>Directorio público</h3>
-            <p>Búsqueda por zona/categoría, lista de prestadores aprobados y perfiles públicos.</p>
-          </article>
-          <article class="phase-card">
-            <span>Fase 2</span>
-            <h3>Registro y aprobación</h3>
-            <p>Cuenta del prestador, carga de DPI, precios y panel interno de revisión manual.</p>
-          </article>
-          <article class="phase-card">
-            <span>Fase 3</span>
-            <h3>Suscripción</h3>
-            <p>Checkout con Recurrente, estado de pago y visibilidad del perfil según suscripción.</p>
-          </article>
-          <article class="phase-card">
-            <span>Fase 4</span>
-            <h3>Reseñas verificadas</h3>
-            <p>Códigos de un solo uso, formulario de reseña y cálculo de calificación promedio.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="stack-section">
-        <div class="section-heading">
-          <p class="eyebrow">Stack sugerido</p>
-          <h2>Tecnología suficiente para lanzar rápido.</h2>
-        </div>
-        <div class="stack-grid">
-          <div>
-            <strong>Next.js + React + TypeScript</strong>
-            <p>Permite construir una app web moderna, tipada y lista para Vercel.</p>
-          </div>
-          <div>
-            <strong>Supabase</strong>
-            <p>Une base de datos, autenticación y almacenamiento de fotos en un solo servicio.</p>
-          </div>
-          <div>
-            <strong>Recurrente</strong>
-            <p>Procesa suscripciones mensuales en quetzales para prestadores.</p>
-          </div>
-          <div>
-            <strong>WhatsApp wa.me</strong>
-            <p>No requiere API de Meta. Solo abre un mensaje precargado al número del prestador.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="decisions-section" id="decisiones">
-        <div class="section-heading">
-          <p class="eyebrow">Antes de construir</p>
-          <h2>Decisiones que el equipo debe confirmar.</h2>
-        </div>
-        <div class="decision-list">
-          <div>
-            <span>01</span>
-            <p>Nombre final y dominio del proyecto.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <p>Cuenta de Recurrente creada, verificada con NIT y cuenta bancaria.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <p>Cuentas de Supabase y Vercel disponibles para el proyecto.</p>
-          </div>
-          <div>
-            <span>04</span>
-            <p>Categorías exactas del lanzamiento inicial.</p>
-          </div>
-          <div>
-            <span>05</span>
-            <p>Precio mensual de la suscripción del prestador.</p>
-          </div>
         </div>
       </section>
     </main>
