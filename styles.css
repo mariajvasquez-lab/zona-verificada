@@ -115,8 +115,8 @@ select {
 .hero {
   position: relative;
   display: block;
-  min-height: calc(100vh - 75px);
-  padding: 70px 5vw 34px;
+  min-height: calc(100vh - 76px);
+  padding: 94px 5vw 72px;
   color: var(--black);
   background: var(--white);
   overflow: hidden;
@@ -137,7 +137,7 @@ select {
 }
 
 .hero-content,
-.search-card {
+.hero-service-strip {
   position: relative;
   z-index: 1;
 }
@@ -164,19 +164,10 @@ p {
 
 h1 {
   max-width: 1050px;
-  margin-bottom: 22px;
-  font-size: clamp(56px, 10vw, 118px);
-  line-height: 0.88;
+  margin-bottom: 10px;
+  font-size: clamp(96px, 18vw, 230px);
+  line-height: 0.82;
   letter-spacing: -0.07em;
-}
-
-h1 span {
-  display: inline;
-  color: var(--white);
-  background: var(--blue);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  padding: 0 0.08em 0.06em;
 }
 
 h2 {
@@ -200,17 +191,16 @@ h3 {
 }
 
 .hero-kicker {
-  max-width: 520px;
-  margin-bottom: 42px;
+  max-width: 720px;
+  margin-bottom: 36px;
   color: var(--black);
-  font-size: clamp(28px, 4vw, 48px);
-  font-weight: 500;
+  font-size: clamp(34px, 6vw, 74px);
+  font-weight: 650;
   line-height: 1;
   letter-spacing: -0.06em;
 }
 
 .hero-actions,
-.trust-row,
 .filters,
 .auth-actions {
   display: flex;
@@ -219,23 +209,30 @@ h3 {
 }
 
 .hero-actions {
-  margin: 32px 0;
+  margin: 0;
 }
 
-.trust-row span {
-  padding: 10px 12px;
-  color: var(--black);
-  background: var(--soft);
-  border: 1px solid rgba(5, 5, 5, 0.08);
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 850;
+.explore-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.explore-section::after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  bottom: -170px;
+  width: min(66vw, 760px);
+  height: min(66vw, 760px);
+  background:
+    linear-gradient(135deg, transparent 43%, rgba(31, 107, 255, 0.08) 44% 56%, transparent 57%) 0 0 / 150px 150px,
+    linear-gradient(45deg, transparent 43%, rgba(31, 107, 255, 0.08) 44% 56%, transparent 57%) 0 0 / 150px 150px;
+  pointer-events: none;
 }
 
 .hero-service-strip {
-  position: relative;
-  z-index: 1;
-  margin-top: 54px;
+  margin-top: 0;
 }
 
 .strip-heading {
