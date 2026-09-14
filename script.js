@@ -101,7 +101,25 @@ const providers = [
 ];
 
 const providerGrid = document.querySelector("#providerGrid");
+const heroRail = document.querySelector("#heroRail");
 const filterButtons = document.querySelectorAll(".filter-button");
+
+function renderHeroRail() {
+  if (!heroRail) return;
+
+  heroRail.innerHTML = providers
+    .map(
+      (provider) => `
+        <a class="hero-mini-card" href="#directorio">
+          <img src="${provider.image}" alt="${provider.imageAlt}" />
+          <span>${provider.category}</span>
+          <strong>${provider.name}</strong>
+          <small>${provider.zone}</small>
+        </a>
+      `
+    )
+    .join("");
+}
 
 function renderProviders(category = "all") {
   const visibleProviders =
@@ -145,3 +163,4 @@ filterButtons.forEach((button) => {
 });
 
 renderProviders();
+renderHeroRail();
