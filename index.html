@@ -17,6 +17,7 @@
         <span>Taski</span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#buscador">Buscador</a>
         <a href="#directorio">Directorio</a>
         <a href="#zonas">Zonas</a>
         <a href="#seguridad">Seguridad</a>
@@ -28,12 +29,10 @@
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <p class="eyebrow">Servicios verificados en Guatemala</p>
-          <p class="hero-kicker">No busques entre chats infinitos.</p>
-          <h1>Encontrá a la persona correcta para <span>resolver tu casa</span>.</h1>
+          <p class="eyebrow">Taski Guatemala</p>
+          <h1>Servicios confiables <span>cerca de ti</span>.</h1>
           <p class="hero-copy">
-            Taski reúne trabajadores verificados por zona, categoría, precio y reseñas.
-            Elegís, comparás y contactás por WhatsApp.
+            Buscá por zona, precio y tipo de trabajo.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#directorio">Buscar trabajador</a>
@@ -77,6 +76,63 @@
             <p>Las opiniones se dejan con código de servicio para reducir reseñas falsas.</p>
           </article>
         </div>
+      </section>
+
+      <section class="service-search-section" id="buscador">
+        <div class="section-heading">
+          <p class="eyebrow">Buscador de servicios</p>
+          <h2>Decí qué necesitás y filtrá opciones rápido.</h2>
+          <p>
+            Buscá trabajadores por zona, presupuesto aproximado y tipo de servicio.
+            En la app real, estos filtros mostrarían resultados aprobados automáticamente.
+          </p>
+        </div>
+
+        <form class="service-search-form">
+          <div class="form-field">
+            <label for="search-zone">Zona</label>
+            <select id="search-zone" name="zone">
+              <option>Zona 10</option>
+              <option>Zona 14</option>
+              <option>Zona 15</option>
+              <option>Zona 16</option>
+              <option>Zona 11</option>
+              <option>Zona 7</option>
+              <option>Mixco</option>
+              <option>Villa Nueva</option>
+              <option>Carretera a El Salvador</option>
+              <option>Antigua Guatemala</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="search-budget">Rango de precio</label>
+            <select id="search-budget" name="budget">
+              <option>Q100 - Q200</option>
+              <option>Q200 - Q350</option>
+              <option>Q350 - Q500</option>
+              <option>Q500 - Q800</option>
+              <option>Q800 o más</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="search-service">Servicio</label>
+            <select id="search-service" name="service">
+              <option>Limpieza</option>
+              <option>Niñera</option>
+              <option>Plomería</option>
+              <option>Electricidad</option>
+              <option>Carpintería</option>
+              <option>Albañilería</option>
+              <option>Jardinería</option>
+              <option>Pintura</option>
+              <option>Cerrajería</option>
+            </select>
+          </div>
+
+          <button class="search-submit" type="button">Buscar en Taski</button>
+        </form>
       </section>
 
       <section class="directory-section" id="directorio">
