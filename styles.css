@@ -116,7 +116,7 @@ select {
   position: relative;
   display: block;
   min-height: calc(100vh - 75px);
-  padding: 78px 5vw 34px;
+  padding: 70px 5vw 34px;
   color: var(--black);
   background: var(--white);
   overflow: hidden;
@@ -164,8 +164,8 @@ p {
 
 h1 {
   max-width: 1050px;
-  margin-bottom: 18px;
-  font-size: clamp(58px, 10vw, 120px);
+  margin-bottom: 22px;
+  font-size: clamp(56px, 10vw, 118px);
   line-height: 0.88;
   letter-spacing: -0.07em;
 }
@@ -193,10 +193,10 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 520px;
+  max-width: 640px;
   color: rgba(5, 5, 5, 0.68);
-  font-size: 21px;
-  line-height: 1.35;
+  font-size: 19px;
+  line-height: 1.65;
 }
 
 .hero-kicker {
@@ -219,7 +219,7 @@ h3 {
 }
 
 .hero-actions {
-  margin: 24px 0 0;
+  margin: 32px 0;
 }
 
 .trust-row span {
@@ -235,7 +235,7 @@ h3 {
 .hero-service-strip {
   position: relative;
   z-index: 1;
-  margin-top: 44px;
+  margin-top: 54px;
 }
 
 .strip-heading {
@@ -276,7 +276,6 @@ h3 {
   background: var(--white);
   border: 2px solid var(--black);
   border-radius: 6px;
-  box-shadow: 6px 6px 0 var(--blue);
 }
 
 .hero-mini-card img {
